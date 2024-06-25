@@ -1,0 +1,34 @@
+###
+GET http://localhost:5107/
+
+###
+GET http://localhost:5107/students
+
+###
+GET http://localhost:5107/students/1
+
+###
+POST http://localhost:5107/students
+Content-Type: application/json
+
+{
+    "name": "Mostafa Mohamed",
+    "gender": "Male",
+    "departmentId": 2
+}
+
+###
+PUT http://localhost:5107/students/1
+Content-Type: application/json
+
+{
+    "name": "Ahmed Sayed Zizo",
+    "gender": "Male",
+    "departmentId": 2
+}
+
+###
+DELETE http://localhost:5107/students/2
+
+###
+GET http://localhost:5107/departments

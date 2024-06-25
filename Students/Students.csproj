@@ -1,0 +1,33 @@
+<!-- 
+  This is the project file for a .NET 8.0 web application. 
+  It includes configurations and dependencies for building and running the project.
+-->
+
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <!-- PropertyGroup contains project-wide settings like the target framework and nullable reference type settings -->
+  <PropertyGroup>
+    <!-- TargetFramework specifies the version of .NET this project targets -->
+    <TargetFramework>net8.0</TargetFramework>
+
+    <!-- Enable nullable reference types feature in C# -->
+    <Nullable>enable</Nullable>
+
+    <!-- Automatically include commonly used namespaces -->
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <!-- ItemGroup specifies the NuGet packages this project depends on -->
+  <ItemGroup>
+    <!-- EF Core Sqlite provider for database access -->
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.6">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="8.0.6" />
+    
+    <!-- Extensions for working with Minimal APIs -->
+    <PackageReference Include="MinimalApis.Extensions" Version="0.11.0" />
+  </ItemGroup>
+
+</Project>
