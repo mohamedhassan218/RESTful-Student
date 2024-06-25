@@ -30,7 +30,7 @@ A **.NET**-based REST API designed to manage student information in his departme
 
 3. Change the directory:
     ```bash
-    cd RESTful-Student\
+    cd RESTful-Student\Students\
     ```
 
 4. Install the dependencies:
