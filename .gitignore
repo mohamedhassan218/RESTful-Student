@@ -9,6 +9,7 @@
 *.userprefs
 *.suo
 *.sln.docstates
+*.db
 
 # Build results
 bin/
